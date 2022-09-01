@@ -1,0 +1,30 @@
+/* ****************************** BLOCK and INLINE ****************************** */
+
+p {
+	/* BLOCK element by default */
+	background-color: red;
+	width: 100px;
+	/*width worked here...  */
+	display: inline;
+	/* as set to INLINE, width didn't work now */
+}
+
+span {
+	/* INLINE element by default */
+	background-color: deepskyblue;
+	width: 100px;
+	/*width didn't worked here...  */
+	display: block;
+	/* as set to BLOCK, width will work now */
+}
+
+/* ****************************** INLINE-BLOCK ****************************** */
+
+/* Its the combination of both so that we can use the width attribute */
+
+.inline-block {
+	background-color: red;
+	width: 100px;
+	display: inline-block;
+	/* both width and inline feature will work */
+}
