@@ -2,10 +2,10 @@
 
 p {
 	/* BLOCK element by default */
-	background-color: red;
-	width: 100px;
+	background-color: yellow;
+	/* width: 100px; */
 	/*width worked here...  */
-	display: inline;
+	/* display: inline; */
 	/* as set to INLINE, width didn't work now */
 }
 
@@ -14,7 +14,7 @@ span {
 	background-color: deepskyblue;
 	width: 100px;
 	/*width didn't worked here...  */
-	display: block;
+	/* display: block; */
 	/* as set to BLOCK, width will work now */
 }
 
@@ -27,4 +27,14 @@ span {
 	width: 100px;
 	display: inline-block;
 	/* both width and inline feature will work */
+}
+
+/* ****************************** NONE vs HIDDEN ****************************** */
+
+#p1 {
+	display: none;
+}
+
+#p2 {
+	visibility: hidden;
 }
