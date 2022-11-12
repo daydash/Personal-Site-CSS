@@ -1,26 +1,40 @@
 body {
 	background-color: #e4f6f6;
+	/* background-color: #cff5e7; */
 	margin: 0;
 	text-align: center;
 	font-family: "Merriweather", serif;
+	/* font-size: 200%; // now as 200% = 32px, now 1em = 32px and the changes will refects in all of its child */
 }
 
 h1 {
-	margin: 0;
+	/* margin: 50px; */
+	margin: 50px auto 0 auto;
 	font-family: "Sacramento", cursive;
-	font-size: 40px;
+	/* font-size: 5.625em; // 16px = 100% = 1em // 90px = 90/16 = 562.5% = 5.625em */
+	font-size: 5.625rem; /* 1rem is always equals to 16px irrespective of its parents config*/
+	color: #66bfbf;
+	/* line-height: 2; */
 }
 
 h2 {
 	font-family: "Montserrat", sans-serif;
+	font-size: 2.5rem;
+	color: #66bfbf;
+	font-weight: normal;
 }
 
 h3 {
 	font-family: "Montserrat", sans-serif;
+	color: #11999e;
+}
+
+a {
+	color: #11999e;
 }
 
 .top-container {
-	background-color: #7fbcd2;
+	background-color: #cff5e7;
 	position: relative;
 	padding: 100px;
 	padding-bottom: 0;
@@ -39,11 +53,28 @@ h3 {
 .bottom-cloud {
 	position: absolute;
 	left: 500px;
-	top: 170px;
+	top: 300px;
 }
 
 .mountain {
 	position: relative;
 	/* top: 5px; */
 	padding-bottom: 0;
+}
+
+.me {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+}
+
+.computer {
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+}
+.shuttle {
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
 }
