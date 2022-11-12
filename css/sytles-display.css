@@ -18,6 +18,33 @@ span {
 	/* as set to BLOCK, width will work now */
 }
 
+.block {
+	background-color: red;
+}
+
+.inline {
+	background-color: deepskyblue;
+}
+
+/* ****************************** BLOCK and INLINE ELEMENTS ****************************** */
+/* BLOCK */
+
+/* 
+Paragraphs <p>
+Headers <h1> to <h6>
+Divisions <div>
+Lists and list items <ol>, <ul> and <li>
+Forms <form>
+*/
+
+/* INLINE */
+
+/* 
+Spans <span>
+Images <img>
+Anchors <a>
+ */
+
 /* ****************************** INLINE-BLOCK ****************************** */
 
 /* Its the combination of both so that we can use the width attribute */
@@ -30,6 +57,10 @@ span {
 }
 
 /* ****************************** NONE vs HIDDEN ****************************** */
+
+/* use in quizes for hiding answers */
+/* using none we could surpisely show the answer by showing the text in the middle of sentence by shifting some content */
+/* using visibility : hidden we could actually leave some space for the answer to be appear when clicked on submit button */
 
 #p1 {
 	display: none;

@@ -1,7 +1,42 @@
+/* ****************************** POSITION ****************************** */
+
+/* 
+Static
+Relative
+Absolute
+Fixed
+*/
+
+/* ****************************** ******** ****************************** */
+body {
+	margin: 0;
+}
 div {
 	width: 100px;
 	height: 100px;
 }
+.green {
+	position: relative;
+	/* position: absolute; */
+	background-color: green;
+	width: 300px;
+	height: 300px;
+}
+/* ****************************** Static ****************************** */
+
+.red0 {
+	background-color: red;
+}
+
+.blue0 {
+	background-color: blue;
+}
+
+.yellow0 {
+	background-color: yellow;
+}
+
+/* ****************************** Relative ****************************** */
 
 /* .red {
 	background-color: red;
@@ -41,4 +76,54 @@ div {
 	position: relative;
 	display: inline-block;
 	right: 100px;
+}
+
+/* ****************************** Absolute ****************************** */
+
+.red2 {
+	background-color: red;
+	position: absolute;
+	left: 200px;
+	top: 200px;
+}
+
+.blue2 {
+	background-color: blue;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+}
+
+.yellow2 {
+	background-color: yellow;
+	position: absolute;
+}
+
+/* ****************************** Fixed ****************************** */
+
+.red3 {
+	background-color: red;
+	position: fixed;
+	top: 50px;
+	right: 50px;
+}
+
+.blue3 {
+	background-color: blue;
+	position: fixed;
+	top: 150px;
+	right: 50px;
+}
+
+.yellow3 {
+	background-color: yellow;
+	position: fixed;
+	top: 250px;
+	right: 50px;
+}
+
+.fixed {
+	position: fixed;
+	top: 1px;
+	right: 80px;
 }

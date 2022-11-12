@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Some Rules of HTML and Default CSS</title>
+		<link rel="stylesheet" href="css/style-some-rules.css" />
+	</head>
+	<body>
+		<ol>
+			<li>
+				<p class="heading">Content is everything</p>
+				<ul class="points">
+					<li>Height and width is determined by the content</li>
+					<li>
+						In inline elements both the height and the width is determined by
+						the body content
+					</li>
+					<li>In block elements height is determined by the body content</li>
+				</ul>
+			</li>
+			<li>
+				<p class="heading">Order comes from code</p>
+				<ul class="points">
+					<li>
+						Order of the content of page is determined from the order in code
+					</li>
+					<li>
+						there is a difference between:
+						<ul>
+							<li>
+								&lt;h1&gt; &lt;/h1&gt;<br />
+								&lt;p&gt; &lt;/p&gt;<br />
+								&lt;p&gt; &lt;/p&gt;<br />
+								&lt;p&gt; &lt;/p&gt;<br />
+								&lt;img&gt;
+							</li>
+							<li>
+								&lt;img&gt;<br />
+								&lt;p&gt; &lt;/p&gt;<br />
+								&lt;p&gt; &lt;/p&gt;<br />
+								&lt;h1&gt; &lt;/h1&gt;<br />
+								&lt;p&gt; &lt;/p&gt;
+							</li>
+						</ul>
+					</li>
+					<li>both the above codes will provide very different outputs</li>
+				</ul>
+			</li>
+			<li>
+				<p class="heading">Children sit on parents</p>
+				<ul class="points">
+					<li>
+						&lt;div class="d1"&gt;<br />
+						&lt;div class="d2"&gt;<br />
+						&lt;h1&gt;a &lt;span class="s1"&gt;pro&lt;/span&gt;
+						grammer&lt;/h1&gt;<br />&lt;/div&gt;<br />&lt;/div&gt;
+					</li>
+					<li>
+						will looks like:
+						<div
+							style="
+								background-color: red;
+								height: 300px;
+								width: 300px;
+								padding: 25px 25px 25px 25px;
+							"
+						>
+							<div
+								style="
+									background-color: deepskyblue;
+									height: 300px;
+									width: 300px;
+								"
+							>
+								<h1 style="margin: 0 0 0 0">
+									<p
+										style="
+											margin: 0 0 0 0;
+											display: inline-block;
+											padding: 131px 50px 132px 50px;
+											color: deeppink;
+										"
+									>
+										a
+										<span style="background-color: yellow; color: green"
+											>pro</span
+										>grammer
+										<!-- p has height 36.667px and width 199.354px by default -->
+									</p>
+								</h1>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ol>
+	</body>
+</html>
