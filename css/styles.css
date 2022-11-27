@@ -8,6 +8,10 @@ body {
 	/* font-size: 200%; // now as 200% = 32px, now 1em = 32px and the changes will refects in all of its child */
 }
 
+p {
+	line-height: 2;
+}
+
 h1 {
 	/* margin: 50px; */
 	margin: 50px auto 0 auto;
@@ -34,10 +38,14 @@ a {
 	color: #11999e;
 }
 
+a:hover {
+	color: #eaf6f6;
+}
+
 .skill-row {
 	width: 50%;
 	margin: 110px auto;
-	line-height: 2;
+	/* line-height: 2; */
 	text-align: left;
 }
 
@@ -82,9 +90,10 @@ a {
 }
 
 .me-para {
-	width: 500px;
+	/* width: 500px; */
+	width: 30%;
 	margin: auto;
-	line-height: 2;
+	/* line-height: 2; */
 }
 
 .computer {
@@ -101,6 +110,11 @@ a {
 	float: right;
 	margin-left: 30px;
 }
+
+.connect {
+	margin: 40px auto 60px;
+}
+
 /* .skill-para-1 {
 	clear: left;
 }
@@ -118,7 +132,7 @@ a {
 	-webkit-border-radius: 8;
 	-moz-border-radius: 8;
 	border-radius: 8px;
-	font-family: Arial;
+	font-family: "Montserrat", sans-serif;
 	color: #ffffff;
 	font-size: 20px;
 	padding: 10px 20px 10px 20px;
@@ -140,7 +154,7 @@ a {
 	margin: 0;
 	background-color: #66bfbf;
 	font-family: "Montserrat", sans-serif;
-	padding: 50px;
+	padding: 50px 0 20px;
 }
 
 hr {
@@ -161,12 +175,20 @@ hr {
 
 .footer-link {
 	color: #11999e;
-	margin: auto 25px;
+	margin: 10px 25px;
 	text-decoration: none;
 }
 
 .copyright {
 	color: #eaf6f6;
+	font-size: 0.75em;
 	font-family: "Merriweather", serif;
 	font-weight: normal;
 }
+/* 
+.index2 {
+	color: #11bfbf;
+	text-decoration: none;
+	position: absolute;
+	right: 0;
+} */
