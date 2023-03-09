@@ -57,6 +57,8 @@ div {
 	left: 100px;
 } */
 
+/* there will be some space downwards the relative block with the above code */
+
 .red {
 	background-color: red;
 	position: relative;
